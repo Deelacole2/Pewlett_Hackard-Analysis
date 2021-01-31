@@ -18,15 +18,19 @@
 ## Summary:
 
   * How many roles will need to be filled as the "silver tsunami" begins to make an impact? About ~72,400 will begin the process of retiring during this period.
+  
   ![retireeCount](retireecountcodesnippet.png)
   
   * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees? There actually more than enough, with the parameters that we have initially set up there are only 1,549 eligible. We will need to expand the age range in order to better head off the upcoming hiring crisis. When I modify the birth dates to include everyone born from 1963 to 1965, we get around 38,000 qualified applicants to fill the soon-to-be vacant positions. Still not enough but much better. 
-  ![menteecount](menteecountcodesnippett.png)
+
+![menteecount](menteecountcodesnippett.png)
 
 Additionally, I modified the first query, where we use WHERE statements to filter, I added the filter (to_date = '9999-01-01'). This indicates that the employee still works at the company. Not adding this parameter makes all over queries from its' base incorrect. We would not need employees in the data that do not currently work with us.
+
 ![modifiedquery1](modified.query1.png)
 
 Lastly, I created a query that will tell us how many retirees we have per department. This info is also valuable and will allow us to break up this massive task.
+
 ![bydept.table](retireesbydept.table.png)
 ![bydept.code](retireesbydept.code.png)
 
